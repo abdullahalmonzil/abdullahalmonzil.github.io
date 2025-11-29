@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Al Monzil - Junior Front-End Developer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="Main Navigation">
+            <div class="logo" aria-label="Abdullah Al Monzil Portfolio">Monzil<span style="color:var(--accent);font-weight:normal;">.dev</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero" aria-label="Home">Home</a></li>
+                <li><a href="#about" aria-label="About">About</a></li>
+                <li><a href="#skills" aria-label="Skills">Skills</a></li>
+                <li><a href="#contact" aria-label="Contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navigation-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+    <section id="hero" class="hero" tabindex="-1">
+        <div class="hero-content">
+            <div class="hero-photo">
+                <img src="./IMG_20250609_005057.jpg" alt="Portrait of Abdullah Al Monzil">
+            </div>
+            <div>
+                <h1>Abdullah Al Monzil</h1>
+                <h2 style="font-size:1.3rem;color:var(--accent);margin:0 0 1rem 0;">Junior Front-End Developer</h2>
+                <p style="max-width:400px;">Passionate about crafting seamless, modern web experiences. I blend creativity with code to deliver engaging, responsive interfaces.</p>
+                <a href="#skills" class="cta-button" aria-label="View My Work">View My Work</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about" tabindex="-1">
+        <h2>About Me</h2>
+        <p>
+            As a dedicated front-end developer, I specialize in creating high-quality, user-centric digital experiences. My focus is on building modern, responsive, and dynamic user interfaces that captivate users and drive engagement.
+        </p>
+        <div class="about-stack" style="display:flex;flex-wrap:wrap;gap:1.5rem;margin:1.5rem 0;">
+            <div class="stack-card">
+                <strong>Languages</strong>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+            <div class="stack-card">
+                <strong>Frameworks & Libraries</strong>
+                <ul>
+                    <li>React.js</li>
+                </ul>
+            </div>
+            <div class="stack-card">
+                <strong>Styling</strong>
+                <ul>
+                    <li>Tailwind CSS</li>
+                    <li>Bootstrap</li>
+                </ul>
+            </div>
+            <div class="stack-card">
+                <strong>Tools</strong>
+                <ul>
+                    <li>Git</li>
+                </ul>
+            </div>
+        </div>
+        <p>
+            I am committed to writing clean, maintainable code and delivering pixel-perfect designs that function seamlessly across all devices and browsers. I thrive on collaborating with clients and teams to bring innovative ideas to life.
+        </p>
+    </section>
+
+    <section id="skills" class="skills" tabindex="-1">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card" title="HTML5"><span>🔤</span> HTML5</div>
+            <div class="skill-card" title="CSS3"><span>🎨</span> CSS3</div>
+            <div class="skill-card" title="JavaScript"><span>🟨</span> JavaScript</div>
+            <div class="skill-card" title="React.js"><span>⚛️</span> React.js</div>
+            <div class="skill-card" title="Tailwind CSS"><span>🌬️</span> Tailwind CSS</div>
+            <div class="skill-card" title="Bootstrap"><span>🅱️</span> Bootstrap</div>
+            <div class="skill-card" title="Git"><span>🔗</span> Git</div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact" tabindex="-1">
+        <h2>Contact Me</h2>
+        <p>Let's connect! I'm open to collaboration, freelance opportunities, or just a friendly chat.</p>
+        <p>
+            <a href="mailto:abdullahalmonzil05@gmail.com" class="cta-button" style="margin-bottom:1rem;" aria-label="Email Abdullah Al Monzil">abdullahalmonzil05@gmail.com</a>
+        </p>
+        <div class="social-links">
+            <a href="https://github.com/your-github" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
+                <svg width="20" height="20" fill="currentColor" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                GitHub
+            </a>
+            <a href="https://linkedin.com/in/your-linkedin" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
+                <svg width="20" height="20" fill="currentColor" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.868 0-2.156 1.459-2.156 2.967v5.702h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.601 2.002 3.601 4.604v5.592z"></path></svg>
+                LinkedIn
+            </a>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Abdullah Al Monzil. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
