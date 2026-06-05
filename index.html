@@ -3,15 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdullah Al Monzil - Junior Front-End Developer</title>
+    <title>Abdullah Al Monzil - Software Developer Undergrad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <style>
-        html { scroll-behavior: smooth; }
-        body {
-            font-family: 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -21,6 +16,7 @@
                 <li><a href="#hero" aria-label="Home">Home</a></li>
                 <li><a href="#about" aria-label="About">About</a></li>
                 <li><a href="#skills" aria-label="Skills">Skills</a></li>
+                <li><a href="#my-work" aria-label="My Work">Projects</a></li>
                 <li><a href="#contact" aria-label="Contact">Contact</a></li>
             </ul>
             <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navigation-menu">
@@ -39,9 +35,9 @@
             </div>
             <div>
                 <h1>Abdullah Al Monzil</h1>
-                <h2 style="font-size:1.3rem;color:var(--accent);margin:0 0 1rem 0;">Junior Front-End Developer</h2>
-                <p style="max-width:400px;">Passionate about crafting seamless, modern web experiences. I blend creativity with code to deliver engaging, responsive interfaces.</p>
-                <a href="#skills" class="cta-button" aria-label="View My Work">View My Work</a>
+                <h2 class="text-xl text-[#f59e42] font-semibold mb-4">Software Developer Undergrad</h2>
+                <p class="max-w-[400px]">Passionate about crafting seamless modern web experiences and robust database architectures. Blending core logical problem-solving with full-stack capabilities.</p>
+                <a href="#my-work" class="cta-button" aria-label="View My Work">View My Work</a>
             </div>
         </div>
     </section>
@@ -49,69 +45,103 @@
     <section id="about" class="about" tabindex="-1">
         <h2>About Me</h2>
         <p>
-            As a dedicated front-end developer, I specialize in creating high-quality, user-centric digital experiences. My focus is on building modern, responsive, and dynamic user interfaces that captivate users and drive engagement.
+            As a dedicated Computer Science and Engineering student, I specialize in building high-quality, user-centric digital applications. My focus spans across developing dynamic frontend interfaces, optimizing backend processes, and designing structural database systems.
         </p>
-        <div class="about-stack" style="display:flex;flex-wrap:wrap;gap:1.5rem;margin:1.5rem 0;">
+
+        <div class="flex flex-wrap gap-6 my-6">
             <div class="stack-card">
                 <strong>Languages</strong>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
+                <ul class="list-disc pl-5">
+                    <li>C / C++</li>
                     <li>JavaScript</li>
+                    <li>HTML5 / CSS3</li>
                 </ul>
             </div>
             <div class="stack-card">
                 <strong>Frameworks & Libraries</strong>
-                <ul>
+                <ul class="list-disc pl-5">
                     <li>React.js</li>
+                    <li>Node.js <span class="bg-[#e0f2fe] text-[#0369a1] text-[0.75rem] font-bold px-1.5 py-0.5 rounded ml-1">(Learning)</span></li>
+                    <li>Express.js <span class="bg-[#e0f2fe] text-[#0369a1] text-[0.75rem] font-bold px-1.5 py-0.5 rounded ml-1">(Learning)</span></li>
                 </ul>
             </div>
             <div class="stack-card">
-                <strong>Styling</strong>
-                <ul>
-                    <li>Tailwind CSS</li>
-                    <li>Bootstrap</li>
-                </ul>
-            </div>
-            <div class="stack-card">
-                <strong>Tools</strong>
-                <ul>
+                <strong>Databases & Tools</strong>
+                <ul class="list-disc pl-5">
+                    <li>Oracle SQL <span class="bg-[#fef3c7] text-[#b45309] text-[0.75rem] font-bold px-1.5 py-0.5 rounded ml-1">(Learning)</span></li>
+                    <li>MongoDB <span class="bg-[#fef3c7] text-[#b45309] text-[0.75rem] font-bold px-1.5 py-0.5 rounded ml-1">(Learning)</span></li>
                     <li>Git</li>
                 </ul>
             </div>
+            <div class="stack-card">
+                <strong>Core Concepts</strong>
+                <ul class="list-disc pl-5">
+                    <li>Data Structures (DSA)</li>
+                    <li>OOP Concepts</li>
+                    <li>DBMS Fundamentals</li>
+                </ul>
+            </div>
         </div>
+        
         <p>
-            I am committed to writing clean, maintainable code and delivering pixel-perfect designs that function seamlessly across all devices and browsers. I thrive on collaborating with clients and teams to bring innovative ideas to life.
+            I am committed to writing clean, maintainable code and delivering well-structured solutions that function seamlessly. I thrive on diving deep into backend logics and collaborating on impactful enterprise applications.
         </p>
     </section>
 
     <section id="skills" class="skills" tabindex="-1">
         <h2>Skills</h2>
         <div class="skills-grid">
-            <div class="skill-card" title="HTML5"><span>🔤</span> HTML5</div>
-            <div class="skill-card" title="CSS3"><span>🎨</span> CSS3</div>
+            <div class="skill-card" title="C/C++"><span>💻</span> C / C++</div>
+            <div class="skill-card" title="Java"><span>☕</span> Java (Basic)</div>
             <div class="skill-card" title="JavaScript"><span>🟨</span> JavaScript</div>
             <div class="skill-card" title="React.js"><span>⚛️</span> React.js</div>
-            <div class="skill-card" title="Tailwind CSS"><span>🌬️</span> Tailwind CSS</div>
-            <div class="skill-card" title="Bootstrap"><span>🅱️</span> Bootstrap</div>
+            <div class="skill-card" title="Node.js"><span>🟢</span> Node.js <span class="bg-[#e0f2fe] text-[#0369a1] text-[0.7rem] font-bold px-1.5 py-0.5 rounded ml-1">(Learning)</span></div>
+            <div class="skill-card" title="Oracle SQL"><span>🛢️</span> Oracle SQL <span class="bg-[#fef3c7] text-[#b45309] text-[0.7rem] font-bold px-1.5 py-0.5 rounded ml-1">(Learning)</span></div>
+            <div class="skill-card" title="Data Structures"><span>📊</span> DSA</div>
             <div class="skill-card" title="Git"><span>🔗</span> Git</div>
+        </div>
+    </section>
+
+    <section id="my-work" class="my-work" tabindex="-1">
+        <h2>Featured Project</h2>
+        <div class="bg-gradient-to-br from-[#f8fafc] to-[#e0e7ff] border-l-[5px] border-[#2563eb] rounded-xl p-6 md:p-8 shadow-md hover:-translate-y-1 hover:shadow-lg transition-all duration-300 mt-6">
+            <div class="flex flex-wrap justify-between items-center gap-4 mb-4">
+                <h3 class="text-xl md:text-2xl font-bold text-[#2563eb] m-0">E-Affidavit System</h3>
+                <span class="bg-[#ffedd5] text-[#f59e42] text-sm font-bold px-4 py-1.5 rounded-full shadow-sm">In Progress</span>
+            </div>
+            <p class="text-[#22223b] leading-relaxed text-[1.05rem] mb-6">
+                An upcoming digital platform aimed at automating the conventional affidavit execution process. The project focuses on integrating secured digital signature architectures and standard verification API workflows (such as NID validations) to ensure seamless legal authenticity.
+            </p>
+            <div>
+                <strong class="block mb-3 text-[#2563eb] font-semibold">Architecture & Technology Focus:</strong>
+                <div class="flex flex-wrap gap-2.5">
+                    <span class="bg-[#e0e7ff] text-[#2563eb] text-sm font-semibold px-3.5 py-1.5 rounded-lg hover:bg-[#2563eb] hover:text-white transition-colors duration-200">MERN Stack</span>
+                    <span class="bg-[#e0e7ff] text-[#2563eb] text-sm font-semibold px-3.5 py-1.5 rounded-lg hover:bg-[#2563eb] hover:text-white transition-colors duration-200">Oracle SQL</span>
+                    <span class="bg-[#e0e7ff] text-[#2563eb] text-sm font-semibold px-3.5 py-1.5 rounded-lg hover:bg-[#2563eb] hover:text-white transition-colors duration-200">API Integrations</span>
+                    <span class="bg-[#e0e7ff] text-[#2563eb] text-sm font-semibold px-3.5 py-1.5 rounded-lg hover:bg-[#2563eb] hover:text-white transition-colors duration-200">Secure Cryptography</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="contact" class="contact" tabindex="-1">
         <h2>Contact Me</h2>
-        <p>Let's connect! I'm open to collaboration, freelance opportunities, or just a friendly chat.</p>
+        <p>Let's connect! I'm open to collaboration, industry learning opportunities, or professional guidance.</p>
         <p>
-            <a href="mailto:abdullahalmonzil05@gmail.com" class="cta-button" style="margin-bottom:1rem;" aria-label="Email Abdullah Al Monzil">abdullahalmonzil05@gmail.com</a>
+            <a href="mailto:abdullahalmonzil05@gmail.com" class="cta-button inline-block mb-4 mt-4" aria-label="Email Abdullah Al Monzil">abdullahalmonzil05@gmail.com</a>
         </p>
         <div class="social-links">
             <a href="https://github.com/abdullahalmonzil" target="_blank" rel="noopener" class="social-icon" aria-label="GitHub">
-                <svg width="20" height="20" fill="currentColor" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+                <svg width="20" height="20" fill="currentColor" class="inline-block align-middle mr-1.5" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
                 GitHub
             </a>
             <a href="https://www.linkedin.com/in/abdullahalmonzil" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn">
-                <svg width="20" height="20" fill="currentColor" style="vertical-align:middle;margin-right:6px;" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.868 0-2.156 1.459-2.156 2.967v5.702h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.601 2.002 3.601 4.604v5.592z"></path></svg>
+                <svg width="20" height="20" fill="currentColor" class="inline-block align-middle mr-1.5" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.868 0-2.156 1.459-2.156 2.967v5.702h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.601 2.002 3.601 4.604v5.592z"></path></svg>
                 LinkedIn
+            </a>
+            <a href="https://www.facebook.com/abdullahalmonzil" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook">
+                <svg width="20" height="20" fill="currentColor" class="inline-block align-middle mr-1.5" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+                Facebook
             </a>
         </div>
     </section>
