@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Abdullah Al Monzil - Software Engineering Undergrad, Backend & Full-Stack Developer."
+    />
+    <title>Abdullah Al Monzil | Software Engineering Undergrad</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- Background Ambient Glow Accents -->
+    <div class="ambient-glow glow-top" aria-hidden="true"></div>
+    <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+      <nav class="nav-container" aria-label="Main Navigation">
+        <a href="#hero" class="nav-brand" aria-label="Abdullah Al Monzil Home">
+          <span class="brand-bracket">&lt;</span>Monzil<span
+            class="brand-bracket"
+          >
+            /&gt;</span
+          >
+        </a>
+
+        <div class="nav-menu" id="navigation-menu">
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+
+          <div class="nav-social-actions">
+            <a
+              href="https://github.com/abdullahalmonzil"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon-link"
+              aria-label="GitHub Profile"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abdullahalmonzil"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="icon-link"
+              aria-label="LinkedIn Profile"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                fill="currentColor"
+              >
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.868 0-2.156 1.459-2.156 2.967v5.702h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.601 2.002 3.601 4.604v5.592z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="hamburger-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation-menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-card glassmorphism">
+            <div class="hero-avatar-wrapper">
+              <img
+                src="./IMG_20250609_005057.jpg"
+                alt="Abdullah Al Monzil"
+                class="hero-avatar"
+                onerror="
+                  this.src =
+                    'https://placehold.co/240x240/1e293b/38bdf8?text=Monzil'
+                "
+              />
+              <div class="status-indicator" title="Available for opportunities">
+                <span class="status-dot"></span>
+                <span>Ready to build</span>
+              </div>
+            </div>
+
+            <div class="hero-details">
+              <span class="badge-accent">Hello, World! I am</span>
+              <h1 class="hero-title">Abdullah Al Monzil</h1>
+              <h2 class="hero-role">
+                Software Engineering Undergrad &bull;
+                <span class="text-gradient">Backend & Full-Stack</span>
+              </h2>
+              <p class="hero-description">
+                Passionate about designing modular web applications, optimizing
+                relational database architectures, and writing clean, scalable
+                logic. Bridging foundational computer science principles with
+                modern ES6+ full-stack systems.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                  View Projects
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#contact"
+                  class="btn btn-secondary"
+                  download="Abdullah_Al_Monzil_Resume.pdf"
+                >
+                  Download CV / Resume
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    width="16"
+                    height="16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">01. Overview</span>
+            <h2 class="section-title">About Me</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-narrative glassmorphism">
+              <p>
+                I am a Computer Science & Engineering undergraduate with a
+                strong drive toward
+                <strong
+                  >backend engineering, systemic problem-solving, and clean
+                  architectural design</strong
+                >. My programming journey started with procedural depth in C and
+                C++, which instilled in me a deep appreciation for memory
+                safety, algorithmic efficiency, and foundational data
+                structures.
+              </p>
+              <p>
+                Today, I focus on full-stack web technologies, utilizing modern
+                JavaScript (ES6+), Node.js environments, and robust database
+                layers like Oracle SQL and PostgreSQL. Rather than chasing
+                buzzwords, I focus on understanding what happens underneath:
+                normalizing schemas, structuring idempotent RESTful APIs, and
+                building resilient code.
+              </p>
+              <div class="focus-bullets">
+                <div class="focus-item">
+                  <span class="focus-icon">&check;</span>
+                  <span
+                    ><strong>Strong CS Foundations:</strong> DSA, OOP, OS, and
+                    DBMS internals</span
+                  >
+                </div>
+                <div class="focus-item">
+                  <span class="focus-icon">&check;</span>
+                  <span
+                    ><strong>Relational Integrity:</strong> Schema design,
+                    indexing, and transactional workflows</span
+                  >
+                </div>
+                <div class="focus-item">
+                  <span class="focus-icon">&check;</span>
+                  <span
+                    ><strong>Clean Architecture:</strong> Modular, readable, and
+                    maintainable software standards</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="about-metric-column">
+              <div class="metric-card glassmorphism">
+                <span class="metric-number">3+</span>
+                <span class="metric-label">Years of Problem-Solving</span>
+                <p class="metric-text">
+                  Dedicated study in C/C++, algorithmic challenges, and system
+                  fundamentals.
+                </p>
+              </div>
+              <div class="metric-card glassmorphism">
+                <span class="metric-number">Full-Stack</span>
+                <span class="metric-label">Target Architecture</span>
+                <p class="metric-text">
+                  Specializing in JS/Node.js web layers backed by secure
+                  database schemas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">02. Capabilities</span>
+            <h2 class="section-title">Technical Arsenal</h2>
+          </div>
+
+          <div class="skills-category-grid">
+            <!-- Languages -->
+            <div class="skill-category-card glassmorphism">
+              <div class="card-icon-header">
+                <span class="cat-icon">&lt;/&gt;</span>
+                <h3>Languages</h3>
+              </div>
+              <div class="pill-group">
+                <span class="tech-pill">C</span>
+                <span class="tech-pill">C++</span>
+                <span class="tech-pill">JavaScript (ES6+)</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">HTML5 & CSS3</span>
+              </div>
+            </div>
+
+            <!-- Backend & Web -->
+            <div class="skill-category-card glassmorphism">
+              <div class="card-icon-header">
+                <span class="cat-icon">&lambda;</span>
+                <h3>Backend & Web</h3>
+              </div>
+              <div class="pill-group">
+                <span class="tech-pill">Node.js</span>
+                <span class="tech-pill">Express.js</span>
+                <span class="tech-pill">RESTful APIs</span>
+                <span class="tech-pill">React.js</span>
+                <span class="tech-pill">Async Workflows</span>
+              </div>
+            </div>
+
+            <!-- Databases & Systems -->
+            <div class="skill-category-card glassmorphism">
+              <div class="card-icon-header">
+                <span class="cat-icon">&equiv;</span>
+                <h3>Databases & Systems</h3>
+              </div>
+              <div class="pill-group">
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">Oracle SQL</span>
+                <span class="tech-pill">MongoDB</span>
+                <span class="tech-pill">Database Normalization</span>
+                <span class="tech-pill">Linux / Bash Basics</span>
+              </div>
+            </div>
+
+            <!-- CS Fundamentals & Tools -->
+            <div class="skill-category-card glassmorphism">
+              <div class="card-icon-header">
+                <span class="cat-icon">&oplus;</span>
+                <h3>CS Fundamentals & Tools</h3>
+              </div>
+              <div class="pill-group">
+                <span class="tech-pill">Data Structures (DSA)</span>
+                <span class="tech-pill">OOP Paradigm</span>
+                <span class="tech-pill">DBMS Architecture</span>
+                <span class="tech-pill">Git & GitHub</span>
+                <span class="tech-pill">Postman</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">03. Selected Work</span>
+            <h2 class="section-title">Featured Projects</h2>
+          </div>
+
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <article class="project-card glassmorphism">
+              <div class="project-card-header">
+                <div class="project-type-indicator">
+                  <span class="project-type">System Architecture</span>
+                  <span class="project-status status-active">Active Build</span>
+                </div>
+                <h3 class="project-title">E-Affidavit Management Platform</h3>
+              </div>
+              <p class="project-summary">
+                A digital verification platform engineered to replace
+                conventional physical affidavit workflows with tamper-evident
+                digital signatures and authenticated state tracking.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Designed strict relational database schemas enforcing
+                  non-repudiation and timestamp audit trails.
+                </li>
+                <li>
+                  Implemented modular service layers in Node.js for verifiable
+                  citizen document generation.
+                </li>
+                <li>
+                  Architected robust error boundaries and cryptographic hashing
+                  integrations.
+                </li>
+              </ul>
+              <div class="tech-stack-row">
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Oracle SQL</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">Crypto</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/abdullahalmonzil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn primary-btn"
+                >
+                  GitHub Repo
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a href="#contact" class="project-btn secondary-btn"
+                  >View Architecture</a
+                >
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card glassmorphism">
+              <div class="project-card-header">
+                <div class="project-type-indicator">
+                  <span class="project-type">Full-Stack Application</span>
+                  <span class="project-status status-completed">Completed</span>
+                </div>
+                <h3 class="project-title">Single-Vendor DBMS E-Commerce</h3>
+              </div>
+              <p class="project-summary">
+                A relational database-backed storefront with transactional order
+                processing, dynamic inventory decrement triggers, and cart
+                persistence across sessions.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Built a normalized PostgreSQL relational schema handling
+                  orders, variants, and customer histories.
+                </li>
+                <li>
+                  Authored structured CRUD endpoints using Express.js with JSON
+                  Web Token (JWT) authorization.
+                </li>
+                <li>
+                  Crafted an interactive client interface with reactive filter
+                  states and secure checkout checkout flow.
+                </li>
+              </ul>
+              <div class="tech-stack-row">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express.js</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JavaScript ES6+</span>
+                <span class="tech-tag">JWT Auth</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/abdullahalmonzil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn primary-btn"
+                >
+                  GitHub Repo
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/abdullahalmonzil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn secondary-btn"
+                >
+                  Live Demo ↗
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card glassmorphism">
+              <div class="project-card-header">
+                <div class="project-type-indicator">
+                  <span class="project-type">Desktop Utility</span>
+                  <span class="project-status status-completed">Completed</span>
+                </div>
+                <h3 class="project-title">
+                  Desktop Image Processor & Compressor
+                </h3>
+              </div>
+              <p class="project-summary">
+                A lightweight desktop utility engineered to optimize, resize,
+                and convert batches of images locally without compromising
+                privacy or relying on third-party cloud engines.
+              </p>
+              <ul class="project-points">
+                <li>
+                  Implemented multithreaded batch optimization utilizing Python
+                  and the Pillow graphics library.
+                </li>
+                <li>
+                  Engineered clean GUI controls for quality scaling, dimension
+                  bounding, and format transformation.
+                </li>
+                <li>
+                  Demonstrated core algorithmic manipulation of binary streams
+                  and local file system threads.
+                </li>
+              </ul>
+              <div class="tech-stack-row">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Pillow</span>
+                <span class="tech-tag">Tkinter GUI</span>
+                <span class="tech-tag">Multithreading</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/abdullahalmonzil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn primary-btn"
+                >
+                  GitHub Repo
+                  <svg
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/abdullahalmonzil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-btn secondary-btn"
+                >
+                  Releases
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container contact-container">
+          <div class="contact-card glassmorphism">
+            <span class="section-tag">04. Get In Touch</span>
+            <h2 class="section-title">Let's Build Something Exceptional</h2>
+            <p class="contact-text">
+              I am actively seeking junior engineering roles, backend
+              apprenticeships, and collaborative software initiatives. If you
+              are looking for an analytical developer with solid CS roots and
+              high energy, my inbox is always open.
+            </p>
+
+            <a
+              href="mailto:abdullahalmonzil05@gmail.com"
+              class="contact-email-btn"
+            >
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                width="18"
+                height="18"
+              >
+                <path
+                  d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                />
+                <path
+                  d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                />
+              </svg>
+              <span>abdullahalmonzil05@gmail.com</span>
+            </a>
+
+            <div class="social-channels">
+              <a
+                href="https://github.com/abdullahalmonzil"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-pill"
+                aria-label="GitHub Profile"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.757-1.333-1.757-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.605-2.665-.305-5.466-1.334-5.466-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/abdullahalmonzil"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-pill"
+                aria-label="LinkedIn Profile"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.065-1.867-3.065-1.868 0-2.156 1.459-2.156 2.967v5.702h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.601 2.002 3.601 4.604v5.592z"
+                  />
+                </svg>
+                LinkedIn
+              </a>
+              <a
+                href="https://www.facebook.com/abdullahalmonzil"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-pill"
+                aria-label="Facebook Profile"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  width="18"
+                  height="18"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+                Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>
+          Designed & Built with Vanilla JS & CSS &bull; &copy;
+          <span id="current-year"></span>
+          Abdullah Al Monzil.
+        </p>
+        <p class="footer-subtext">All systems functional.</p>
+      </div>
+    </footer>
+
+    <!-- Vanilla Javascript Logic -->
+    <script src="script.js"></script>
+  </body>
+</html>
